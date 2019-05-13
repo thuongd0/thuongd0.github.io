@@ -1,0 +1,368 @@
+*{margin: 0; padding: 0;} 
+/* Navigation */
+body,html{
+    font-family: 'Montserrat', sans-serif;
+}
+#navigation #collapsibleNavId ul.navbar-nav li.nav-item{
+    list-style: none;
+}
+#navigation #collapsibleNavId ul.navbar-nav li.nav-item a.nav-link{
+    font-size: 14px;
+    color: #fafafa;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 40px 20px;
+    transition: .4s;
+}
+#navigation #collapsibleNavId ul.navbar-nav li.nav-item.active a.nav-link,
+#navigation #collapsibleNavId ul.navbar-nav li.nav-item:hover a.nav-link{
+    color: #009688!important;
+}
+#Introduce{
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+    background-position: center center;
+    background-image: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/bg.jpeg);
+}
+
+#Introduce .intro{
+    padding-top: 310px;
+    margin-left: 100px;
+}
+#Introduce .intro span {
+    color: #fafafa;
+    font-size: 20px;
+    font-weight: 500;
+}
+#Introduce .intro .name{
+    color:#009688;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 15px 0;
+    display: block;
+    animation: fadeInLeft 1s forwards;
+    animation-delay: 0.2s;
+}
+
+#Introduce .intro .job {
+    color: #fafafa;
+    font-size: 24px;
+    font-weight: 500;
+    animation: fadeInLeft 1s forwards;
+    animation-delay: 0.4s;
+}
+@-webkit-keyframes fadeInLeft{
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#About-me,
+#Pratice
+{
+    padding: 90px 0;
+    background: #EEEEEE;
+}
+#Skill,
+#Resume,
+#Contact
+{
+    padding: 90px 0;
+}
+
+#About-me .header_title,
+#Skill .header_title,
+#Resume .header_title,
+#Pratice .header_title,
+#Contact .header_title{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+#About-me .header_title::after,
+#Skill .header_title::after,
+#Resume .header_title::after,
+#Pratice .header_title::after,
+#Contact .header_title::after{
+    content: '';
+    background: #009688;
+    display: block;
+    height: 3px;
+    width: 130px;
+    margin: 20px auto;
+}
+
+#About-me .avarta{
+    padding: 0 0 10px 10px;
+    border-left: 5px solid #009688;
+    border-bottom: 5px solid #009688;
+}
+
+#About-me .information span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #404D5B;
+}
+
+#About-me .information p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #404D5B;
+    margin: 30px 0;
+}
+
+#About-me .information .table tbody tr td{
+    font-size: 14px;
+    font-weight: 400;
+    color: #404D5B;
+    padding: 10px 0;
+    border: none;
+}
+
+#Skill ._1line .subject-title{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 10px;
+}
+#Resume ._1block{
+    background: #EEEEEE;
+    position: relative; 
+    padding: 30px;
+    margin-bottom: 30px;
+}
+#Resume ._1block:hover {
+    box-shadow: 0px 4px 1px 0 #00000038;
+}
+#Resume ._1block::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 0;
+    height:0;
+    border-left: 35px solid #009688;
+    border-bottom: 35px solid transparent;
+}
+#Resume  h2.skill-title,
+#Skill h2.skill-title{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+    padding-bottom: 23px;
+}
+
+#Resume  h2.skill-title::after,
+#Skill h2.skill-title::after{
+    content: '';
+    background: #009688;
+    display: block;
+    height: 3px;
+    width: 100px;
+    margin-right: 20px auto;
+    margin-top: 20px;
+}
+
+#Resume p.skill-title_more{
+    font-size: 15px;
+    font-weight: 400px;
+    padding-bottom: 30px;
+}
+
+#Resume ._1block p.time{
+    font-size: 14px;
+    font-weight: 400;
+}
+#Resume ._1block p.title-job {
+    font-size: 20px;
+    font-weight: 700;
+    color: #009688;
+}
+#Resume ._1block p.detail-job{
+    font-size: 15px;
+    font-weight: 400;
+}
+#Pratice ._1prj{
+    background: #EEEEEE;
+}
+
+#Pratice ._1prj:hover{
+    border: 1px solid #009688;
+    opacity: 1;
+    visibility: visible;
+}
+#Pratice ._1prj a.title-prj{
+    font-size: 24px;
+    font-weight: 500;
+    color: #009688;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+#Pratice ._1prj p.detail-prj{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 10px;
+    padding-bottom: 40px;
+}
+#Pratice ._1prj a.download{
+    font-size: 14px;
+    font-weight: 500;
+    background: #009688;
+    text-decoration: none;
+    color: #fafafa;
+    display: block;
+    border-radius: 2px;
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+
+#Contact ._1block_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+#Contact ._1block_info .icon{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    background: #009688;
+    color: #fff;
+}
+
+#Contact ._1block_info .detail{
+    font-size: 16px;
+    font-weight: 400;
+    flex-grow: 1;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.form-row {
+    width: 47%;
+    float: left;
+    margin: 20px 10px;
+} 
+#Contact .btn_message{
+    margin: auto;   
+}
+#Contact .btn_message a{
+    text-align: center;
+    border-radius: 40px;
+    background: #009688;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 40px;
+    text-transform: uppercase;
+}
+#Contact .btn_message:hover a{
+    color: #009688;
+    border: 1px solid #009688;
+    background: #ffff;
+}
+
+#footer  {
+    background: #EEEEEE;
+}
+#footer .coder{
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 30px;
+}
+#footer .social ul{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+#footer .social ul li{
+    float: left;
+    transition: 0.4s;
+}
+
+#footer .social ul li a{
+    font-size: 20px;
+    margin: 0 20px;
+    color: #404D5B;
+}
+
+#footer .social ul li:hover a{
+    color: #009688;
+}
+
+.progress-bar{
+    background: #009688;
+}
+
+/* hieu ung scroll */
+.menu.bg {
+    background: #404D5B;
+    border-bottom: 1px solid #555555;
+    box-shadow: 0px 1px 20px 0px #00000042;
+    margin-bottom: 0 !important;
+    height: 60px;
+    transition: 0.4s;
+}
+.project{
+    opacity: 0;
+}
+.dilen{
+	animation: cdlen 1s ease forwards;
+}
+
+@-webkit-keyframes cdlen {
+	from{transform: translateY(100px); opacity: 0;}
+	to{transform: translateY(0px); opacity: 1;}
+}
+
+@media(max-width: 576px){
+    *{}
+    .menu{
+        background: #404D5B!important;
+    }
+    #navigation #collapsibleNavId ul.navbar-nav li.nav-item a.nav-link{
+        padding: 10px;
+    }
+
+    #Introduce{
+        height: 400px;
+    }
+    #Introduce .intro{
+        padding-top: 200px;
+    }
+    #Introduce .intro span {
+        font-size: 20px;
+    }
+    #Introduce .intro .name{
+        font-size: 30px;
+    }
+    
+    #Introduce .intro .job {
+        font-size: 15px;
+    }
+}
+
+    
+    
+
+
+
+
+
