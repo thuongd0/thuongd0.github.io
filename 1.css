@@ -3,6 +3,8 @@
 body,html{
     font-family: 'Montserrat', sans-serif;
 }
+
+/* Navbar */
 #navigation #collapsibleNavId ul.navbar-nav li.nav-item{
     list-style: none;
 }
@@ -19,6 +21,8 @@ body,html{
 #navigation #collapsibleNavId ul.navbar-nav li.nav-item:hover a.nav-link{
     color: #009688!important;
 }
+
+/* Intro */
 #Introduce{
     background-size: cover;
     background-attachment: fixed;
@@ -64,6 +68,7 @@ body,html{
     }
 }
 
+/* About me */
 #About-me,
 #Pratice
 {
@@ -74,7 +79,7 @@ body,html{
 #Resume,
 #Contact
 {
-    padding: 90px 0;
+    padding: 80px 0;
 }
 
 #About-me .header_title,
@@ -129,21 +134,44 @@ body,html{
     border: none;
 }
 
+/* Skill */
 #Skill ._1line .subject-title{
     font-size: 14px;
     font-weight: 400;
     padding: 10px 10px;
 }
+.subject{
+    display: flex;
+    align-items: center;
+}
+
+.subject .subject-title{
+    flex-grow: 1;
+}
+
+._1line {
+    height: 130px;
+}
+
+.progress{
+    height: 5px;
+}
+
+/* Resume */
 #Resume ._1block{
     background: #EEEEEE;
     position: relative; 
     padding: 30px;
     margin-bottom: 30px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 #Resume ._1block:hover {
     box-shadow: 0px 4px 1px 0 #00000038;
 }
-#Resume ._1block::after{
+/* #Resume ._1block::after{
     content: "";
     position: absolute;
     top: 0;
@@ -153,7 +181,7 @@ body,html{
     height:0;
     border-left: 35px solid #009688;
     border-bottom: 35px solid transparent;
-}
+} */
 #Resume  h2.skill-title,
 #Skill h2.skill-title{
     font-size: 30px;
@@ -173,7 +201,8 @@ body,html{
     margin-top: 20px;
 }
 
-#Resume p.skill-title_more{
+#Resume p.skill-title_more,
+#Skill p.skill_title_more{
     font-size: 15px;
     font-weight: 400px;
     padding-bottom: 30px;
@@ -192,6 +221,8 @@ body,html{
     font-size: 15px;
     font-weight: 400;
 }
+
+/* Pratice */
 #Pratice ._1prj{
     background: #EEEEEE;
 }
@@ -229,6 +260,8 @@ body,html{
     transition: 0.4s;
 }
 
+
+/* Contact */
 #Contact ._1block_info {
     display: flex;
     justify-content: center;
@@ -279,6 +312,7 @@ body,html{
     background: #ffff;
 }
 
+/* Footer */
 #footer  {
     background: #EEEEEE;
 }
@@ -320,17 +354,6 @@ body,html{
     height: 60px;
     transition: 0.4s;
 }
-.project{
-    opacity: 0;
-}
-.dilen{
-	animation: cdlen 1s ease forwards;
-}
-
-@-webkit-keyframes cdlen {
-	from{transform: translateY(100px); opacity: 0;}
-	to{transform: translateY(0px); opacity: 1;}
-}
 
 @media(max-width: 576px){
     *{}
@@ -358,6 +381,37 @@ body,html{
         font-size: 15px;
     }
 }
+
+
+/* Social Sticky */
+.social-sticky{
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 100px;
+}
+
+.social-sticky ul li{
+    width: 40px;
+    height: 40px;
+    list-style-type: none;
+    padding-left: 12px;
+    padding-top: 8px;
+    background: #009688;
+    margin-top: 5px;
+}
+.social-sticky ul li a{
+    color: #ffff;
+}
+
+.social-sticky ul li:hover{
+    padding-left: 20px;
+    width: 50px;
+    transition: 0.4s;
+}
+
+
 
     
     
