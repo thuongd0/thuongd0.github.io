@@ -385,7 +385,7 @@ body,html{
 
 /* Social Sticky */
 .social-sticky{
-    position: sticky;
+    position: fixed;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
