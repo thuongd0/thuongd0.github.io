@@ -260,6 +260,11 @@ body,html{
     transition: 0.4s;
 }
 
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
 
 /* Contact */
 #Contact ._1block_info {
