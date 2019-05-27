@@ -48,3 +48,18 @@ $(document).ready(function(){
         }
     })
 })
+
+document.addEventListener("DOMContentLoaded", function(){
+    var collapse = document.querySelectorAll('.collapse ul li');
+    console.log(collapse);
+    for (var i = 0; i < collapse.length; i++) {
+        collapse[i].addEventListener("click", function(){
+
+            for(var i = 0; i < collapse.length; i++){
+                collapse[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        })
+        
+    }
+})
